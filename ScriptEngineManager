@@ -1,0 +1,7 @@
+ScriptEngineManager mgr = new ScriptEngineManager();
+  ScriptEngine jsEngine = mgr.getEngineByName("JavaScript");
+  try {
+    jsEngine.eval("print('Hello, world!')");
+  } catch (ScriptException ex) {
+      ex.printStackTrace();
+  }
